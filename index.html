@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGED - Detalle del documento</title>
+    <!-- Montserrat font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gobBurgundy: '#621132',
+                        gobGold: '#A07831',
+                        gobGoldBar: '#A88038',
+                        gobLabel: '#4A4A4A',
+                        gobValue: '#6F7274',
+                        gobGreenBg: '#E2F0D9',
+                        gobGreenText: '#2D6232'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex justify-center items-start bg-gray-100 sm:py-6">
+
+    <!-- Container imitating mobile viewport layout -->
+    <div class="w-full max-w-md bg-white shadow-xl min-h-screen sm:min-h-0 sm:rounded-lg overflow-hidden flex flex-col justify-between">
+        
+        <div>
+            <!-- Header 1: Gobierno de México -->
+            <header class="bg-gobBurgundy text-white px-5 py-3 flex items-center space-x-3">
+                <!-- Escudo Nacional de México (SVG) -->
+                <svg class="w-10 h-10 flex-shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" stroke="#C59B27" stroke-width="2.5"/>
+                    <path d="M50 20 C35 30 25 45 25 60 C25 75 35 80 50 80 C65 80 75 75 75 60 C75 45 65 30 50 20 Z" fill="none" stroke="#C59B27" stroke-width="2"/>
+                    <path d="M40 55 L50 35 L60 55 L50 50 Z" fill="#C59B27"/>
+                    <circle cx="50" cy="65" r="5" fill="#C59B27"/>
+                </svg>
+                <div class="flex flex-col leading-none justify-center">
+                    <span class="text-[11px] tracking-wide font-light opacity-90 uppercase">Gobierno de</span>
+                    <span class="text-[19px] font-semibold tracking-normal -mt-0.5">México</span>
+                </div>
+            </header>
+
+            <!-- Header 2: SIGED Bar -->
+            <div class="bg-gobGold text-white px-5 py-2.5">
+                <h1 class="text-xl font-medium tracking-wide">SIGED</h1>
+            </div>
+
+            <!-- Main Content -->
+            <main class="px-6 pt-6 pb-4">
+                <!-- Section Title -->
+                <div class="mb-8">
+                    <h2 class="text-[20px] font-semibold text-gray-800 tracking-tight">Detalle del documento</h2>
+                    <!-- Accent Line -->
+                    <div class="w-12 h-[3.5px] bg-gobGoldBar mt-2 rounded-full"></div>
+                    <div class="w-full h-[1px] bg-gray-200 mt-[-1px]"></div>
+                </div>
+
+                <!-- Document Details List -->
+                <div class="space-y-4 text-[15px]">
+                    
+                    <!-- Field 1 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Nombre:</p>
+                        <p class="text-gobValue font-normal mt-0.5">INGRID ABIGAIL ROBLEDA TACU</p>
+                    </div>
+
+                    <!-- Field 2 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Tipo de documento:</p>
+                        <p class="text-gobValue font-normal mt-0.5">Certificado de Estudios por Acuerdo 286</p>
+                    </div>
+
+                    <!-- Field 3 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Folio:</p>
+                        <p class="text-gobValue font-normal mt-0.5 break-all">d188k5lp-63b7-3540-k012-1759lkal91nh</p>
+                    </div>
+
+                    <!-- Field 4 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Estudios:</p>
+                        <p class="text-gobValue font-normal mt-0.5">Bachillerato o equivalente</p>
+                    </div>
+
+                    <!-- Field 5 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Autoridad emisora:</p>
+                        <p class="text-gobValue font-normal mt-0.5">Colegio de Bachilleres Plantel Núm. 3</p>
+                    </div>
+
+                    <!-- Field 6 -->
+                    <div>
+                        <p class="font-semibold text-gobLabel">Fecha de registro en SIGED:</p>
+                        <p class="text-gobValue font-normal mt-0.5">12/07/2015 10:30:13</p>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <!-- Result Box (Bottom Banner) -->
+        <div class="bg-gobGreenBg text-gobGreenText py-6 px-4 text-center mt-6">
+            <p class="text-[17px] font-medium">Resultado obtenido:</p>
+            <p class="text-[22px] font-bold mt-0.5">9.3</p>
+            <p class="text-[16px] font-medium mt-0.5">Nueve punto tres</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
